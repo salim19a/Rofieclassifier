@@ -65,7 +65,7 @@ Make sure to tune hperparameters to avoid memory loading and overfitting !
 
 To perform inference on a single image or a folder containing "road" and "field" subfolders, run the following command in the terminal:
 ```bash
-python  bin/test.py  --model_path  MODELPATH --data DATA --batch 
+python  bin/test.py  --model_path  MODELPATH --data DATA 
 ```
 Where : 
 * MODELPATH: The path to the model saved from the training process. The default value is model_rofie.pth, and it's stored by default in the output folder.
