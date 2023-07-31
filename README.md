@@ -36,7 +36,8 @@ The "**rofieclassifier**" repository is organized as follows:
         - For testing: Replace `../data/test` with the path to your testing data.
     - **requirements.txt** : list of the required packages to be installed
 
-
+## Rofie() General Framework 
+![Alt text](workflow.png)
 ## Training 
 
 Before delving into training, it's important to transform our data, to do this we structure our data folder as following : 
