@@ -1,0 +1,6 @@
+
+train: ../data/train
+
+val: ../data/validation
+
+test: ../data/test
