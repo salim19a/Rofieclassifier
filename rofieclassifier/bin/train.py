@@ -200,7 +200,7 @@ if __name__ == "__main__":
 
     # Call the initialize_weights_xavier function here to initialize the model's weights
     initialize_weights_xavier(model)
-
+    print("Model Summary:")
     summary(model, input_size=(3, args['imgsize'], args['imgsize']))
     # total parameters and trainable parameters
     total_params = sum(p.numel() for p in model.parameters())
