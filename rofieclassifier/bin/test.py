@@ -20,7 +20,7 @@ from PIL import Image
 from pprint import pprint
 from torchsummary import summary
 from typing import Tuple, List
-
+from PIL import Image
 # Add the 'rofieclassifier' directory to the Python path
 rofieclassifier_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(rofieclassifier_path)
@@ -46,7 +46,7 @@ def load_model(model_path: str) -> Tuple[Rofie, int]:
     return rofie, img_size
 
 
-def perform_inference(rofie: Rofie, test_transform: transforms.Compose, image_paths: List[str], class_labels: List[str]) -> Tuple[int, List[Tuple[Image, int, int]]]:
+def perform_inference(rofie: Rofie, test_transform: transforms.Compose, image_paths: List[str], class_labels: List[str]) -> Tuple[int, List[Tuple[Image.Image, int, int]]]:
     """
     Perform inference on the provided image paths and display the results.
 
