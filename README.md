@@ -19,7 +19,9 @@ To import the "rofieclassifier" repository on your local machine, follow these s
     ```
  
 ## Repository Structure:
-The "**rofieclassifier**" repository is organized as follows:
+The "**Rofieclassifier**" repository is organized as follows:
+- data0 : The original provided dataset for training and test, split into train (80%), validation(20%) and kept the test images (10) for test.
+- data:  The augmented dataset contains approximately 155 images for each class and follows the same folder structure as data0.
 
 - rofieclassifier: The main package containing the following subdirectories:
 
@@ -29,7 +31,8 @@ The "**rofieclassifier**" repository is organized as follows:
 
    - **utils**: This directory contains general utilities essential for the package's smooth functioning, such as file checking, plot saving, and data loading.
 
-   - **dataset.yaml** : A YAML file specifying the paths to the data for training, validation, and testing. 
+   - **dataset.yaml** : A YAML file specifying the paths to the data for training, validation, and testing.
+
 ⚠️ If you have data located elsewhere, please make sure to update the content of this file accordingly. Make sure you have the necessary data stored in the directories specified in the "dataset.yaml" file or update the file to match your data location.
         - For training: Replace `../data/train` with the path to your training data.
        - For validation: Replace `../data/validation` with the path to your validation data.
