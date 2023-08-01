@@ -94,7 +94,7 @@ def perform_inference(rofie: Rofie, test_transform: transforms.Compose, image_pa
         cv2.putText(image0, f"Predicted Label: {class_labels[int(pred_label.item())]}", (10, 60),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
         cv2.imshow(f"Image with labels ", image0)
-        cv2.waitKey(0)
+        cv2.waitKey()
         cv2.destroyAllWindows()
 
     return acc_counter, images_with_labels
