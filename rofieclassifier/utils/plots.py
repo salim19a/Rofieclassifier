@@ -1,17 +1,19 @@
 import matplotlib.pyplot as plt
 import os
+from typing import List
 
-def save_plots(train_acc, valid_acc, train_loss, valid_loss, save=False, output="output"):
+def save_plots(train_acc: List[float], valid_acc: List[float], train_loss: List[float], valid_loss: List[float], 
+               save: bool = False, output: str = "output") -> None:
     """
     Function to save the loss and accuracy plots to disk using Matplotlib.
 
     Parameters:
-        train_acc (list): List of training accuracies for each epoch.
-        valid_acc (list): List of validation accuracies for each epoch.
-        train_loss (list): List of training losses for each epoch.
-        valid_loss (list): List of validation losses for each epoch.
+        train_acc (List[float]): List of training accuracies for each epoch.
+        valid_acc (List[float]): List of validation accuracies for each epoch.
+        train_loss (List[float]): List of training losses for each epoch.
+        valid_loss (List[float]): List of validation losses for each epoch.
         save (bool, optional): If True, save the figures to disk. Default is False.
-        output: output directory
+        output (str, optional): Output directory for saving the plots. Defaults to "output".
     """
     # Number of epochs (assuming lists are of equal length)
     epochs = len(train_acc)
@@ -46,6 +48,7 @@ def save_plots(train_acc, valid_acc, train_loss, valid_loss, save=False, output=
         if not os.path.exists(output):
             os.makedirs(output)
         fig.savefig(f'{output}/plots.png')
+
 
 
 
