@@ -1,6 +1,6 @@
 
-train: ../data/train
+train: ../data0/train
 
-val: ../data/validation
+val: ../data0/validation
 
-test: ../data/test
+test: ../data0/test
