@@ -38,7 +38,7 @@ The "**Rofieclassifier**" repository is organized as follows:
        - For validation: Replace `../data/validation` with the path to your validation data.
         - For testing: Replace `../data/test` with the path to your testing data.
     - **requirements.txt** : list of the required packages to be installed
-
+   - We have also Added the report of the project Task1: Technical Exercice , and the Paper Summary of  Task2 : Paper Review
 ## Rofie() General Framework 
 ![Alt text](workflow.png)
 ## Training 
